@@ -8,15 +8,31 @@ public class FlowControlExercises {
 
     public List<String> fizzBuzz(List<Integer> numbers) {
         // TODO - Implement this method such that
+        List<String> newList = new ArrayList<String>();
         //  it creates a list where for each element of the input list ${numbers}
+        newList=()
         //  - if the ${element} is divisible by 3, it adds “Fizz” to the list
+             for (int i = 0; i < numbers.size(); i++) {
+            Integer elem = numbers.get(i);
+               if (elem%3==0 && elem%5==0) {
+                newList.add("Fizz");
+        
         //  - if the ${element} is divisible by 5, it adds “Buzz” to the list
+         } else if (elem%3==0){
+            newList.add("Fizz");
+
+         } else if (elem%5==0){
+            newList.add("Buzz");
+
         //  - if the ${element} is divisible by both 3 and 5, it adds “FizzBuzz” to the list
         //  - it adds the element to the list in any other case
-        //  - it returns the constructed list
-        throw new RuntimeException("Not implemented");
-    }
+         } else {
+            newList.add(elem.toString());
 
+               }
+        //  - it returns the constructed list  
+    }
+    return newList; }
     public String whichMonth(Integer number) {
         // TODO - Implement this method such that
         //  - it returns the month corresponding to the input ${number}

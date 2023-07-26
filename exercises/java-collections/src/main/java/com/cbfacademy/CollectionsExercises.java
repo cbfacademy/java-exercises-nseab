@@ -12,10 +12,15 @@ public class CollectionsExercises {
         //  - add 4 as the 3rd element of the list
         //  - invoke the method element() on the list and print the result on the screen
         //  - return the list
-        throw new RuntimeException"Not implemented");
         List<Integer> integers = new ArrayList<>();
-        System.out.println(integers.size());
+  
         integers.add(4);
+        integers.add(5);
+        integers.add(6);
+        integers.add(8);
+        integers.add(2);
+        integers.add(9);
+        System.out.println(integers.size());
     }
 
     public Stack<Integer> useStack() {
