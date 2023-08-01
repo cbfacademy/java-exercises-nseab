@@ -10,7 +10,6 @@ public class FlowControlExercises {
         // TODO - Implement this method such that
         List<String> newList = new ArrayList<String>();
         //  it creates a list where for each element of the input list ${numbers}
-        newList=()
         //  - if the ${element} is divisible by 3, it adds “Fizz” to the list
              for (int i = 0; i < numbers.size(); i++) {
             Integer elem = numbers.get(i);
