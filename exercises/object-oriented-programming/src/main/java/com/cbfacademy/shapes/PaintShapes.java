@@ -1,16 +1,16 @@
 package com.cbfacademy.shapes;
 
-public class PaintShapes extends Shape {
-    protected Sphere sphere;
-     Rectangle rectangle;
-    protected Cylinder cylinder;
+public abstract class PaintShapes extends Shape {
 
     public static void main(String[] args) {
-        Sphere sphere= new Sphere(15);
-        System.out.println(sphere.area());
+      Rectangle deck = new Rectangle(35, 20);
+    Sphere ball = new Sphere(15);
+    Cylinder tank = new Cylinder(10, 30);
+ 
+    deck.amount(deck);
+    ball.amount(ball);
+    tank.amount(tank);
     }
-    // Sphere sphere= new Sphere(10);
-        // Rectangle rectangle=new Rectangle(5,10);
-        // Cylinder cylinder= new Cylinder(5, 2);
-    //System.out.println(cylinder.area());
+
 }
+    

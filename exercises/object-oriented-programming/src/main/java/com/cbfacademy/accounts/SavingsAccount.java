@@ -9,7 +9,7 @@ public class SavingsAccount extends Account{
         public void addInterest()
         
         {
-            this.balance = balance*(1 + interestRate)
+            this.balance = (int) (balance*(1+interestRate));
         }
 
 }

@@ -1,3 +1,5 @@
+package com.cbfacademy;
+
 import java.util.*;
   
 public class GFG {

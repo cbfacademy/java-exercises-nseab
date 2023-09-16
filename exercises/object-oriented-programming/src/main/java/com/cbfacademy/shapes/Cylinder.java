@@ -8,6 +8,7 @@ public class Cylinder extends Shape {
         this.radius=radius;
         this.height=height;
         this.shapeName="Cylinder";
+        this.coverage = 2;
     }
     
     public double area() {
