@@ -6,15 +6,30 @@ public class CollectionsExercises {
 
     public LinkedList<Integer> useLinkedList() {
         // TODO: create an empty linked list
+        LinkedList<Integer> integers = new LinkedList<>();
         //  - add 4 as the first element of the list
         //  - then add 5, 6, 8, 2, 9 to the list
         //  - add another 2 as the last element of the list
         //  - add 4 as the 3rd element of the list
         //  - invoke the method element() on the list and print the result on the screen
         //  - return the list
-        throw new RuntimeException("Not implemented");
+        
+  
+        integers.add(4);
+        integers.add(5);
+        integers.add(6);
+        integers.add(8);
+        integers.add(2);
+        integers.add(9);
+        integers.addLast(2);
+        integers.add(2, 4);
+        
+       // System.out.println(Arrays.toString(integers.toArray()));
+        
+        return integers;
     }
 
+    
     public Stack<Integer> useStack() {
         // TODO: create an empty stack
         //  - add 5, 6, 8, 9 to the stack
@@ -54,5 +69,13 @@ public class CollectionsExercises {
 
     public String getName() {
         return "Collections Exercises";
+    }
+    @Override
+    public String toString() {
+        return "CollectionsExercises []";
+    }
+
+    public char[] element() {
+        return null;
     }
 }

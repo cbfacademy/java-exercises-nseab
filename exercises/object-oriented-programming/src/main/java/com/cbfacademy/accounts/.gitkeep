@@ -1,0 +1,36 @@
+package com.codingblackfemales.academy;
+
+public class Account{
+private int balance;
+private int accountNumber;
+
+public Account(int balance, int accountNumber)
+{
+    this.balance = balance,
+    this.accountNumber = accountNumber;
+}
+
+public Account(int accountNumber)
+{
+    this.balance = 0;
+    this.accountNumber = accountNumber;
+}
+
+public void deposit(int number)
+{
+    balance +=number;
+}
+public void withdraw(int number)
+{
+    int withdrawalAmount = Math.abs(number);
+    if(balance>= withdrawalAmount)
+    {
+        balance -= withdrawalAmount;
+        return withdrawalAmount;
+    }
+}
+else{
+    System.out.println("Insufficient funds!");
+    return 0;
+}
+}
